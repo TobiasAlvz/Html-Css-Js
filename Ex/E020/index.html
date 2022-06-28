@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            background-image: linear-gradient(to right, #052436dc, #2474a3bd, #43adebd5);
+            background-attachment: fixed;
+            margin: 0px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        article>h2 {
+            text-align: center;
+        }
+
+        header {
+            background-color: black;
+            color: #DBF227;
+            padding: 5px;
+            margin: 0px;
+        }
+
+        nav {
+            background-color: #d8d525c2;
+            padding: 0px;
+            margin: 0px;
+            box-shadow: 1px 1px black;
+        }
+
+        nav>a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 30px;
+        }
+
+        nav>a:hover {
+            text-decoration: underline;
+            color: red;
+        }
+
+        article {
+            /* borda */
+            border-radius: 12px 0px;
+            background-color: #005C53;
+            padding: 7;
+        }
+
+        article>aside {
+            background-color: #2474a3bd;
+        }
+
+        footer {
+            background-color: #042940;
+            color: white;
+            text-align: center;
+            padding: 3px;
+            margin: 0px;
+            box-shadow: 5px 3px 2px black;
+        }
+
+        footer>p {
+            margin: 0px;
+        }
+
+        #bola {
+            height: 50px;
+            width: 50px;
+            margin: 12px;
+            background-color: white;
+            /* Arredondar uma div */
+            border-radius: 50%;
+
+        }
+    </style>
+    <title>Grouping Tags</title>
+</head>
+
+<body>
+    <!-- Cria áreas relativas a cabeçalhos. Pode ser o cabeçalho principal de um site ou até
+mesmo o cabeçalho de uma seção ou artigo. Normalmente inclui títulos <h1> - <h6>
+e subtítulos. Podem também conter menus de navegação.
+ -->
+    <header>
+        <h1>Site Base</h1>
+        <!-- Define uma área que possui os links de navegação pela
+            estrutura de páginas que vão compor o website. Um
+            <nav> pode estar dentro de um <header>. -->
+        <nav><a href="#">LINK</a>
+            <a href="#">LINK</a>
+            <a href="#">LINK</a>
+            <a href="#">LINK</a>
+            <a href="#">LINK</a>
+        </nav>
+    </header>
+    <!-- É um agrupador usado para delimitar o conteúdo
+principal do nosso site. Normalmente concentra as
+seções, artigos e conteúdos periféricos.  -->
+    <main>
+        <!-- Cria seções para sua página. Ela pode conter o conteúdo diretamente no seu corpo ou dividir os conteúdos em artigos com conteúdos específicos. Segundo a documentação oficial da W3C, “uma seção é um agrupamento temático de conteúdos, tipicamente com um cabeçalho”. -->
+        <section id="assuntos">
+            <p>Teologia e Filosofia</p>
+        </section>
+        <!-- Um artigo é um elemento que vai conter um conteúdo que pode ser lido de forma
+independente e dizem respeito a um mesmo assunto. Podemos usar um <article>
+para delimitar um post de blog ou fórum, uma notícia, etc. -->
+        <article>
+            <h2>Noticias Br</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum iste repellendus perferendis quia odit
+                numquam maiores nesciunt. Amet adipisci rerum, voluptatibus ad asperiores aliquid vero quae vitae.
+                Illum,
+                velit quia?</p>
+        </article>
+        <!-- Delimita um conteúdo periférico e complementar ao conteúdo principal de um artigo
+ou seção. Normalmente um conteúdo <aside> está posicionado ao lado de um
+determinado texto ou até mesmo no meio dele, exatamente como fizemos no bloco de
+texto apresentado anteriormente, falando sobre “MÚLTIPLOS NÍVEIS”. -->
+        <aside>
+            <p>Noticia Maria João</p>
+        </aside>
+    </main>
+    <!-- Cria um rodapé para o site inteiro, seção ou artigo. É um conteúdo que não faz parte
+diretamente do conteúdo nem é um conteúdo periférico (o que caracterizaria um
+<aside>), mas possui informações sobre autoria do conteúdo, links adicionais, mapa
+do site, documentos relacionados. -->
+    <footer>
+        <p>Desenvolvido por mim</p>
+    </footer>
+    <div id="bola"></div>
+</body>
+
+</html>

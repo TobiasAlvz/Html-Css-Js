@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personalizar links</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgba(26, 26, 114, 0.774);
+        }
+
+        a {
+            color: yellow;
+            /* Sem sublinhado */
+            text-decoration: none;
+            /* Intensidade do negrito */
+            font-weight: bolder;
+        }
+
+        /* pseudo-classe de quando aquele site (nesse caso) ja for visitado */
+        a:visited {
+            color: black;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: white;
+            /* Sublinhar */
+            text-decoration: underline;
+        }
+
+        a:active {
+            color: rgba(233, 62, 62, 0.473);
+        }
+
+        /* Pseudos-elementos permitem que você formate um pedaço
+específico do elemento referenciado */
+        .especial::after {
+            content: " [Links pessoas]";
+            color: yellow;
+            font-weight: bold;
+            text-decoration: none;
+
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+        <li><a href="https://github.com/TobiasAlvz" class="especial" target="_blank" rel="external">Pagina do github</a>
+        </li>
+
+        <li><a href="https://www.instagram.com/tobias_alvz/" target="_blank" rel="external">Insta do pae</a></li>
+    </ul>
+
+</body>
+
+</html>

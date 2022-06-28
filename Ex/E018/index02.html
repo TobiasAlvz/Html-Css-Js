@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de hover</title>
+    <style>
+        body {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        /* Conceito de filho (children), o paragrafo dentro da div */
+        div>p {
+            /* Não vai aparecer */
+            display: none;
+
+        }
+
+        div:hover>p {
+            display: block;
+            color: burlywood;
+            background-color: cornflowerblue;
+            width: 150px;
+        }
+
+        div:hover {
+            color: darkblue;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>
+        Exemplo de hover
+    </h1>
+
+    <p>Tem um texto abaixo</p>
+    <div>
+        passe o mouse aqui
+        <p>achou o texto</p>
+    </div>
+    <p>fim do exemplo</p>
+
+</body>
+
+</html>
