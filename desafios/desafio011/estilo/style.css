@@ -31,7 +31,33 @@ header a {
     text-decoration: none;
     color: white;
     font-weight: bolder;
+}
 
+header a:hover{
+    text-decoration: underline;
+}
+
+section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+
+}
+
+.normal{
+    background-color: white;
+    color: black;
+}
+
+.imagem{
+    background-color: rgba(0, 0, 0, 0.466);
+    color: white;
+}
+
+.imagem > p{
+    width: 350px;
+    background-color: black;
 }
 
 footer {
@@ -39,7 +65,7 @@ footer {
     color: white;
     text-align: center;
     font-size: 0.7em;
-    padding: 6px;
+    padding: 7px;
 
 }
 
