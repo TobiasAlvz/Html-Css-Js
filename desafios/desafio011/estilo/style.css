@@ -1,0 +1,70 @@
+@charset "UTF-8";
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+html,
+body {
+    min-height: 100vh;
+}
+
+header {
+    background: linear-gradient(to right, rgb(12, 13, 14), #0e0e0ee3);
+    color: white;
+    text-align: center;
+}
+
+h1 {
+    font-weight: bold;
+    font-variant: small-caps;
+    text-transform: capitalize;
+    padding-top: 55px;
+}
+
+header p {
+    padding-bottom: 50px;
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 0.7em;
+    padding: 6px;
+
+}
+
+footer a {
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
+    transition-duration: .6s;
+}
+
+#instagram:hover {
+    background-image: linear-gradient(to right, #3198E2, #6D59C0, #B93590, #E33F5F, #FDD579);
+    border-radius: 6px;
+    padding: 6px;
+    color: white;
+    font-weight: bolder;
+    text-decoration: underline;
+}
+
+#curso:hover {
+    background-color: rgb(29, 29, 244);
+    border-radius: 6px;
+    padding: 6px;
+    color: white;
+    font-weight: bolder;
+    text-decoration: underline;
+
+}
