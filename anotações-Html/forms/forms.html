@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Entendendo Forms</title>
+  </head>
+  <body>
+    <h1>Entendendo Forms</h1>
+    <!-- O action é para onde nossa a nossa form é enviada -->
+    <form target="_blank" action="https://www.google.com/search" method="get">
+      <!-- O label é um text associdado com o input, quando eu aperto no texto ele seleciona o bloco, o for eu tenho que associar com o id do input -->
+      <label for="query">O que deseja pesquisar?</label>
+      <!-- o Required é para obrigar a colocar algo no input da pesquisa. -->
+      <input
+        id="query"
+        type="text"
+        name="q"
+        placeholder="Ex: Games, Anime"
+        required
+      />
+      <input type="submit" value="Pesquisar" />
+  </body>
+</html>
