@@ -1,42 +1,41 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fontes externas</title>
     <style>
-        /* Tipos de format():
+      /* Tipos de format():
         - opentype (otf)
         -truetype (ttf)
         embedded-opentype
         -truetype-att (Apple advanced Typography)
         svg */
-        @font-face {
-            font-family: "Angel";
-            src: url(txt/Angel\ wish.otf) format("opentype"), url(txt/Angel\ wish.ttf) format("truetype");
-            font-weight: normal;
-            font-style: normal;
-        }
-
-        h1 {
-            font-family: "Angel";
-            font-size: 3em;
-            font-weight: lighter;
-        }
+      @font-face {
+        font-family: "Angel";
+        src: url(txt/Angel\ wish.ttf) format("opentype"),
+          url(txt/Angel\ wish.ttf) format("truetype");
+        font-weight: normal;
+        font-style: normal;
+      }
+      h1 {
+        font-family: "Angel";
+        font-size: 3em;
+        font-weight: lighter;
+      }
     </style>
-</head>
+  </head>
 
-<body>
+  <body>
     <h1>Fontes Externas</h1>
-    <h2>
-        Teste
-    </h2>
+    <h2>Teste</h2>
 
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores tempore vitae reprehenderit nam quos, qui
-        illo ipsum ducimus magni quibusdam fugit harum autem voluptates. A ea voluptates dolore placeat autem?</p>
-
-</body>
-
+    <p>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores
+      tempore vitae reprehenderit nam quos, qui illo ipsum ducimus magni
+      quibusdam fugit harum autem voluptates. A ea voluptates dolore placeat
+      autem?
+    </p>
+  </body>
 </html>

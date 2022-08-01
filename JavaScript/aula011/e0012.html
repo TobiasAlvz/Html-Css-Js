@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nacionalidade</title>
+  </head>
+  <body>
+    <h1>Nacionalidade</h1>
+    Digite sua Nacionalidade: <input type="text" name="name" id="name" />
+    <input type="button" value="verificar" onclick="nas()" />
+    <div id="res"></div>
+    <script>
+      function nas() {
+        var nasci = document.getElementById("name");
+        var na = nasci.value;
+        var res = document.getElementById("res");
+        if (na == "Brasil") {
+          res.innerHTML += `<p>Essa pessoa é brasileira!</p>`;
+        } else {
+          res.innerHTML += `<p>Essa pessoa é estrageira!</p>`;
+        }
+      }
+    </script>
+  </body>
+</html>
