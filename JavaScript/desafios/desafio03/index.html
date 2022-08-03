@@ -4,20 +4,21 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Desafio Js01</title>
+    <title>Desafio Js03</title>
     <link rel="stylesheet" href="style/style.css" />
   </head>
-  <body onload="carregar()">
+  <body>
     <header>
-      <h1>Hora do Dia</h1>
+      <h1>Contador</h1>
     </header>
     <section>
-      <div id="msg"><p></p></div>
-      <div id="fts">
-        <img id="manha" class="foto" src="img/manha.png" alt="manhã" />
-        <img id="tarde" class="foto" src="img/tarde.png" alt="tarde" />
-        <img id="noite" class="foto" src="img/noite.png" alt="noite" />
+      <div id="dados">
+        <p>Inicio: <input type="number" name="inicio" id="inicio" /></p>
+        <p>Fim: <input type="number" name="fim" id="fim" /></p>
+        <p>Passos: <input type="number" name="passos" id="passos" /></p>
+        <p><input type="button" value="Contar" onclick="contar()" /></p>
       </div>
+      <div id="res">Preparando contagem</div>
     </section>
     <footer><p>&copy; TobiasAlvz</p></footer>
     <script src="scrpit.js"></script>
