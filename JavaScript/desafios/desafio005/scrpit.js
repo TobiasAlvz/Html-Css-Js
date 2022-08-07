@@ -2,8 +2,7 @@ var num = document.getElementById("fnum");
 var lista = document.getElementById("flista");
 var res = document.getElementById("res");
 var valores = [];
-let s = "Java ";
-s.toLocaleUpperCase;
+
 function isNumero(n) {
   if (Number(n) >= 1 && Number(n) <= 100) {
     return true;
