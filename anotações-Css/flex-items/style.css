@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  /* Propiedades de espassamento, melhores alinhamentos */
+  box-sizing: border-box;
+}
+
+.container {
+  background-color: darkcyan;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: row;
+  column-gap: 10px;
+  justify-content: center;
+  align-items: center;
+  /* flex-wrap: wrap; */
+}
+
+.item {
+  /* width: 200px; */
+  height: 200px;
+  border: 1px solid black;
+  background-color: white;
+  font-size: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* tamanho basico do item */
+  flex-basis: 200px;
+  /* flex-grow serve para mudar o tamanho do item sem quebra-lo imediatamente. se usa somente 0 e 1 para para ativar*/
+  flex-grow: 1;
+}
+
+.item1 {
+  /* Serve para que esse item 1 em especifico, diminua mais que os outros. quanto chegar no limite do flex-basis. se você colocar "0" ele só vai diminuir ate o seu tamanho */
+  flex-shrink: 2;
+}
+
+.item2 {
+}
+
+.item3 {
+}
