@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  background-color: darkslategrey;
+  min-height: 100vh;
+  /* Ele vai ocupar todo o espaço da tela */
+  display: grid;
+  /* Aqui eu estou configurando as colunas do grid dizendo que ele vai ter 3 colunas e cada uma com 1 frame */
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px 15px;
+  grid-auto-rows: minmax(210px, 100%);
+}
+
+.item {
+  border: 2px solid black;
+  background-color: white;
+  font-size: 30px;
+  padding: 10px;
+}
