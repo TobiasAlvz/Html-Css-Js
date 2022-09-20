@@ -1,0 +1,12 @@
+Estruturas de dados são um modo particulas de armazenar e organizar dados de modo que possam ser usados eficientimente, facilitando sua busca e modificação.
+
+1. Lista ligada - é uma coleção de valores onde cada elemento aponta para o proximo
+
+2. Array - coleção de elementos que podem ser identificados por um indice
+
+3. Fila (Queue) - coleção de elementos onde o primeiro elemento a ser retirado é o primeiro elemento a ser adicionado. FIFO (First in/First out)
+
+4. Pilha (Stack) - coleção de elementos onde o ultimo elemento a ser retirado é o primeiro elemento a ser adicionado. LIFO (Last in/First out)
+
+5. Arvore (Tree) - Conjunto de elementos chamados de nós (nodes) organizados em uma estrutura hieraquica (não sequencial), ou seja, podendo estar abaixo ou acima de outros nós.
+
