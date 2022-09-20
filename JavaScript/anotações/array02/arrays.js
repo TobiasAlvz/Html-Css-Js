@@ -47,3 +47,9 @@ const novo = outros.concat(hobbits, "m");
 // Splice
 
 const a = novo.splice(indice, 1, "Gandaf, eu");
+
+// Iterar sobre os Elementos
+for (let i = 0; i < novo.length; i++) {
+  const elemento = novo[indice];
+  console.log(elemento + " se encontra na posição " + indice);
+}
