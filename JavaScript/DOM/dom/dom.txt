@@ -1,0 +1,9 @@
+Document Object Model
+
+Permite que um documento escrito em linguagem de marcação como o HTML seja acessado pelo Js
+
+Feito através de uma estrutura de arvore de objetos
+
+Permite que tenhamos acesso direto a pagia HTML para manipulá-la de varias formas
+
+No navegador, pode acessar o DOM através do objeto document

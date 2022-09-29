@@ -1,0 +1,7 @@
+O DOM permite criar elementos html
+
+criar elementos:
+document.creatElement()
+
+adicionar conteudo ao elemento:
+newElement.innerHTML

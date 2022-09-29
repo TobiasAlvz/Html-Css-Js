@@ -20,7 +20,7 @@ const classes = personagens.map(function (personagem) {
   return personagem.classe;
 });
 
-// console.log(classes);
+console.log(classes);
 
 // const orc = [];
 // for (let i = 0; i < personagens.length; i++) {

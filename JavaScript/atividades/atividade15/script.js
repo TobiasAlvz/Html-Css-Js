@@ -141,6 +141,7 @@ function executar() {
         break;
       case "5":
         excluirVaga();
+        break;
       case "6":
         alert("Saindo...");
         break;
