@@ -1,0 +1,17 @@
+/* O uso do vw e vh são unidades de medida relativa em relação a tela */
+#azul {
+  width: 50vw;
+  height: 300px;
+  background-color: blue;
+}
+
+#vermelho {
+  width: 40vw;
+  height: 50vh;
+  background-color: red;
+}
+
+/* A porcentagem é uma uma unidade de medida em relação ao elemento pai */
+.foto {
+  width: 50%;
+}
