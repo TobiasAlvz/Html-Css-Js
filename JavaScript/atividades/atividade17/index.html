@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Atividade 17</title>
+    <link rel="stylesheet" href="style/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Cadastro de Devs</h1>
+      </header>
+      
+      <section>
+        <form id="devForm">
+          <div>
+           <p>
+              <label for="name">Nome do Dev:</label>
+              <input type="text" name="name" id="name"/>
+            </p>
+          </div>
+          <div>
+          <p>
+            Sexo:
+            <input type="radio" name="radsex" id="mas" checked />
+            <label for="mas">Masculino: </label>
+            <input type="radio" name="radsex" id="fem" />
+            <label for="fem">Feminino: </label>
+          </p>
+          <p>
+         <button id="registerTechnology">Adicionar tecnologia</button>
+          <div id="res"></div>
+        </p>
+            </form>
+      </section>
+      <footer><p>&copy; TobiasAlvz</p></footer>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
