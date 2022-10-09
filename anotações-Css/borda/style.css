@@ -1,0 +1,19 @@
+#primeira {
+  height: 100px;
+  width: 100px;
+  background-color: red;
+  border-style: solid;
+  border-color: rebeccapurple;
+  border-radius: 50%;
+}
+
+#segunda {
+  height: 150px;
+  border-width: 5px 10px 15px 20px;
+  border-style: solid;
+  border-color: red blue green yellow;
+}
+
+p {
+  border: 5px solid blueviolet;
+}
