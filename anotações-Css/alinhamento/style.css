@@ -1,0 +1,20 @@
+/* Margin auto na horizontal vai ser o maximo possivel, na vertical, o minimo */
+.block {
+  height: 100px;
+  width: 100px;
+  background-color: red;
+  /* O margin auto só com elementos que (naturalmente) cobre a tela inteira. display block */
+  margin: auto;
+}
+
+p {
+  width: 400px;
+  margin: auto;
+  /* Aqui a gente vê que o paragrafo estar centralizado, é diferente do texto estar centralizado. */
+  text-align: center;
+}
+
+.img {
+  text-align: center;
+  background-color: cadetblue;
+}
