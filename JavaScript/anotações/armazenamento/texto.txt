@@ -1,0 +1,19 @@
+Recursos de Armazenamento do navegador:
+
+1- session Storage(Armazenamento de sessão):{
+-forma simples de armazenar dados no navegador durante a navegação.
+-Persiste mesmo após mudar de pagina em um mesmo site enquanto a aba/janela estiver aberta
+-Existe somente enquanto a aba daquele site estiver aberta, ao fechar, o session Storage é limpo
+}
+
+2- Local Storage(Armazenamento de sessão){
+-Dados armazenados no navehador que persistem mesmo após fechar a aba/janela do navegador
+-Existem "para sempre", até serem removidos, não possuem data de expiração
+}
+
+3- Cookies(...){
+-Dados armazenados em pequenos arquivos de texto no computador do cliente.
+-Podem possuir uma data de expiração
+-A forma mais tradicional de armazenar certas informações
+
+}
