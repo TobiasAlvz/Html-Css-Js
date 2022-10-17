@@ -1,0 +1,27 @@
+.quadrado {
+  width: 100px;
+  height: 100px;
+  /* esse é o padrão */
+  position: static;
+}
+
+.quadrado-red {
+  background-color: red;
+}
+
+.quadrado-blue {
+  background-color: blue;
+  /* Vai ser relativo ao posicionamento padrão */
+  position: relative;
+  left: 400px;
+  top: 200px;
+}
+.quadrado-green {
+  background-color: green;
+}
+
+.quadro {
+  width: 500px;
+  height: 400px;
+  border: 1px solid gray;
+}

@@ -1,0 +1,28 @@
+.quadrado {
+  width: 100px;
+  height: 100px;
+  /* esse é o padrão */
+  position: static;
+}
+
+.quadrado-red {
+  background-color: red;
+}
+
+.quadrado-blue {
+  background-color: blue;
+  /* Diferente do relative, o absolute é como se vc tirasse aquele elemento da tela, modificando os outros elementos */
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.quadrado-green {
+  background-color: green;
+}
+
+.quadro {
+  width: 500px;
+  height: 400px;
+  border: 1px solid gray;
+  position: relative;
+}

@@ -3,7 +3,7 @@
   height: 100px;
   width: 100px;
   background-color: red;
-  /* O margin auto só com elementos que (naturalmente) cobre a tela inteira. display block */
+  /* O margin auto só funciona com elementos que (naturalmente) cobre a tela inteira. display block */
   margin: auto;
 }
 
