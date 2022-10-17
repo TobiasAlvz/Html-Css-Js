@@ -1,0 +1,23 @@
+/* O paragrafo e DIV são display block */
+.div {
+  display: block;
+  background-color: royalblue;
+  width: 100px;
+}
+
+/* A div é display inline não tem como mudar a altura e largura do span */
+
+/* O  display inline block vai permitir que vc modifique o tamanho e a altura mantendo na mesma linha */
+span {
+  display: inline;
+  background-color: chartreuse;
+  width: 100px;
+  height: 100px;
+}
+
+/* O display none é como se ele nunca tivesse sido colocado, não existe */
+img {
+  width: 100px;
+  /* O visibility: hidden é diferente pois ele só torna o objeto invisivel; */
+  visibility: hidden;
+}
