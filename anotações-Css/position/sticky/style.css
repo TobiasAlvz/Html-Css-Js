@@ -11,9 +11,9 @@
 
 .quadrado-blue {
   background-color: blue;
-  /* O posicionamento é em relação a tela*/
-  position: fixed;
-  left: 100px;
+  position: sticky;
+  width: 100%;
+  top: 0;
 }
 .quadrado-green {
   background-color: green;
@@ -23,5 +23,4 @@
   width: 500px;
   height: 4000px;
   border: 1px solid gray;
-  position: relative;
 }
