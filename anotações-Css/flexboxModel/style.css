@@ -14,10 +14,9 @@
   flex-direction: row;
   /*inverte tudo, a ordem dos itens e onde está fixado. 
   flex-direction: column-reverse; */
-  /* flex-direction: row; */
   /* Gap é o espaçamento entre os itens (junção do column e row gap) */
   /* Se estiver em coluna e você quiser seprarar os itens é row-gap e visse-versa */
-  column-gap: 10px;
+  gap: 10px;
   /*  justify-content: é o alinhamento dos itens, pode ser start, end, center... o space arround vai fazer com que eles fiquem com o mesmo espaço na esqueda e na direita. o space between vai separar os itens o maximo possivel. o space-evenly vai separar eles com distancia igual  */
   justify-content: center;
   align-items: center;
