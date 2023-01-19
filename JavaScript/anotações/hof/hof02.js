@@ -9,11 +9,12 @@ const personagens = [
 ];
 
 // Maneira "Errada"
-// const nomes = []
-// for (let i = 0; i < personagens.length; i++) {
-//   const personagem = personagens[i]
-//   nomes.push(personagem.nome)
-// }
+const nomes = [];
+for (let i = 0; i < personagens.length; i++) {
+  const personagem = personagens[i];
+  nomes.push(personagem.classe);
+}
+console.log(nomes);
 
 // map: permite obter um novo array a partir de um array existenste
 const classes = personagens.map(function (personagem) {
