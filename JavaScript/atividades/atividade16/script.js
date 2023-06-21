@@ -1,41 +1,89 @@
 function escalar() {
-  const position = document.getElementById("position").value;
-  const name = document.getElementById("name").value;
-  const number = document.getElementById("number").value;
+  const positionInput = document.getElementById("position");
+  const nameInput = document.getElementById("name");
+  const numberInput = document.getElementById("number");
+
+  const position = positionInput.value;
+  const name = nameInput.value;
+  const number = numberInput.value;
+
+  if (!position || !name || !number) {
+    alert("Por favor, preencha todos os campos antes de escalar um jogador.");
+    return;
+  }
 
   const confirmacao = confirm(
-    "Deseja escolar um jogador com essas informações?\n" +
-      "Posição: " +
-      position +
-      "\nNome: " +
-      name +
-      "\nNumero da camisa: " +
-      number
+    `Deseja escalar o jogador com as seguintes informações?\nPosição: ${position}\nNome: ${name}\nNúmero da camisa: ${number}`
   );
 
   if (confirmacao) {
-    const team = document.getElementById("res");
+    const teamList = document.getElementById("res");
 
     const newPlayer = document.createElement("li");
-    newPlayer.id = number;
+    newPlayer.className = "player";
 
-    newPlayer.innerText = `Jogador escalado: Posição: ${position} Nome: ${name} Numero da camisa: ${number}`;
-    team.appendChild(newPlayer);
+    const playerInfo = document.createElement("span");
+    playerInfo.className = "player-info";
+    playerInfo.innerText = `Posição: ${position}, Nome: ${name}, Número da camisa: ${number}`;
 
-    document.getElementById("position").value = "";
-    document.getElementById("name").value = "";
-    document.getElementById("number").value = "";
+    newPlayer.appendChild(playerInfo);
+    teamList.appendChild(newPlayer);
+
+    positionInput.value = "";
+    nameInput.value = "";
+    numberInput.value = "";
   }
 }
 
 function remover() {
-  const numberToRemove = document.getElementById("numberToRemove").value;
-  const playerToRemove = document.getElementById(numberToRemove);
+  const numberToRemoveInput = document.getElementById("numberToRemove");
+  const numberToRemove = numberToRemoveInput.value;
 
-  const confirmation = confirm("Remover " + playerToRemove.innerText + "?");
+  if (!numberToRemove) {
+    alert("Por favor, insira o número da camisa para remover o jogador.");
+    return;
+  }
+
+  const teamList = document.getElementById("res");
+  const players = teamList.getElementsByClassName("player");
+
+  let playerToRemove = null;
+
+  for (let i = 0; i < players.length; i++) {
+    const player = players[i];
+    const playerInfo = player.getElementsByClassName("player-info")[0];
+    const playerNumber = getPlayerNumberFromInfo(playerInfo.innerText);
+
+    if (playerNumber === numberToRemove) {
+      playerToRemove = player;
+      break;
+    }
+  }
+
+  if (!playerToRemove) {
+    alert(
+      "O jogador com o número da camisa especificado não foi encontrado na escalação."
+    );
+    return;
+  }
+
+  const confirmation = confirm(
+    `Deseja remover o jogador:\n${playerToRemove.innerText}`
+  );
 
   if (confirmation) {
-    document.getElementById("res").removeChild(playerToRemove);
-    document.getElementById("numberToRemove").value = "";
+    teamList.removeChild(playerToRemove);
+    numberToRemoveInput.value = "";
   }
+}
+
+function getPlayerNumberFromInfo(playerInfo) {
+  const regex = /Número da camisa: (\d+)/;
+  const match = playerInfo.match(regex);
+
+  if (match && match[1]) {
+    return match[1];
+  }
+
+  return null;
 }
