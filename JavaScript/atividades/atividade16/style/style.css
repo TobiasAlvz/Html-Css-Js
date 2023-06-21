@@ -6,6 +6,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+
 }
 
 header {
@@ -14,10 +15,12 @@ header {
   text-align: center;
   padding: 20px 0;
   margin-bottom: 20px;
+
 }
 
 header h1 {
   margin: 0;
+
 }
 
 section {
